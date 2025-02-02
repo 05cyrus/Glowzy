@@ -1,72 +1,62 @@
 .inspiration-container {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .insp-white {
-    width: 40%;
-    height: 100vh;
-    background-color: #f7f1eb;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    align-items: center; /* Centers everything horizontally */
-    text-align: center; /* Ensures text is centered */
-  }
-  
-  .insp-white h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    color: black;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  }
-  
-  .subtext {
-    font-size: 2rem;
-    margin-top: 10px;
-    color: black;
-    margin-left: 1%;
-  }
-  
-  .desc {
-    font-size: 2.5rem;
-    margin-top: 50px;
-    color: #000000;
-    text-align: left;
-    margin-bottom: 0;
-  }
-  
-  .korea-flag img {
-    width: 400px;
-    opacity: 0.5;
-  }
-  
-  .insp-black {
-    width: 60%; 
-    height: 100vh;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 50px;
-  }
-  
-  .beauty-machine img,
-  .mobile-preview img {
-    width: 700px;
-    margin: 20px;
-  }
-  
-  .satisfaction-text {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
+  width: 100%;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+}
+
+.insp-header {
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+.insp-header h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.insp-header p {
+  font-size: 1.4rem;
+  color: #555;
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+.insp-features {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 360px;
+  background: #111;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.feature-card h3 {
+  font-size: 1.6rem;
+  margin: 18px 0 12px;
+}
+
+.feature-card p {
+  font-size: 1.1rem;
+  color: #ddd;
+}

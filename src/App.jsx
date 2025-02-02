@@ -6,6 +6,7 @@ import Journey from './components/Journey/Journey';
 import Pricing from './components/Pricing/Pricing';
 import './App.css';
 
+
 function App() {
   return (
     <div className="App">

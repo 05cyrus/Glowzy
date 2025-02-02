@@ -1,32 +1,31 @@
 import React from 'react';
 import './Inspiration.css';
-import InspirationImg from '../../assets/inspiration.png';
+import Km from '../../assets/km.jpg';
+import Mobile from '../../assets/mobile.png';
 
 function Inspiration() {
   return (
     <div className='inspiration-container'>
-      {/* Left Section */}
-      <div className="insp-white">
-        <h1>10000+</h1>
-        <p className="subtext">Reports generated</p>
-        <p className="desc">
-          No flights, no more delay.<br />
-          With our sophisticated <br />
-          Machine Learning Algorithms.<br />
-          Korean Beauty tech just a tap away.
-        </p>
-        <div className="korea-flag">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" alt="South Korea Flag" />
+      {/* Header Section */}
+      <div className="insp-header">
+        <h1>Unmatched productivity</h1>
+        <p>No flights, no more delay.With our sophisticated Machine Learning Algorithms.Korean Beauty tech just a tap away.</p>
+      </div>
+      
+      {/* Features Section */}
+      <div className='insp-features'>
+        <div className='feature-card'>
+          <img src={Km} alt="Keyboard Shortcuts" />
+          <h3>Keyboard shortcuts</h3>
+          <p>Work efficiently with instant access to common actions.</p>
+        </div>
+        <div className='feature-card'>
+          <img src={Mobile} alt="Team Planner" />
+          <h3>Team Planner</h3>
+          <p>Keep track of the bigger picture by viewing all individual tasks in one centralized team calendar.</p>
         </div>
       </div>
-
-      {/* Right Section */}
-      <div className="insp-black">
-        <div className="beauty-machine">
-          <img src={InspirationImg} alt="Beauty Machine" />
-        </div>
-        <p className="satisfaction-text">Satisfaction Rate</p>
-      </div>
+      
     </div>
   );
 }
